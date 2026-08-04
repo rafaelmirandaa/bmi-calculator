@@ -1,0 +1,51 @@
+.bmi-form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 328px;
+
+    .bmi-form__title {
+        font-size: 1.5rem;
+        font-weight: 600;   
+        text-align: left; 
+    }
+    .bmi-form__units{
+        display: flex;
+        width: 100%;
+        margin: 13px 0;
+        justify-content:space-between;
+
+        .radio{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            width: 48%;
+        }
+    }
+
+
+
+}
+
+
+
+.bmi-form__units {
+}
+
+.radio {
+}
+
+.field {
+}
+
+.field__input {
+}
+
+.result {
+}
+
+.result__number {
+}
+
+.result__text {
+}

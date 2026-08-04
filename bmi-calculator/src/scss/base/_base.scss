@@ -21,6 +21,14 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
+  @font-face {
+    font-family:"Inter";
+    src: url(/bmi-calculator/public/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
