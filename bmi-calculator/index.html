@@ -7,7 +7,7 @@
     <title>bmi-calculator</title>
   </head>
   <body>
-    <section class="header">
+  <section class="header">
       <div class="container">
           <div class="title_container">
             <div class="icon_container">
@@ -64,23 +64,23 @@
             </div>
         </div>
         <div class="result">
-
-            <h3>Your BMI is...</h3>
-
-            <p class="result__number">
-                23.4
-            </p>
-
-            <p class="result__text">
-                Your BMI suggests you're a healthy weight.
-                Your ideal weight is between
-                <strong>63.3kgs - 85.2kgs.</strong>
-            </p>
-
+            <div class="result_noactiv">
+              <h3>Welcome!</h3>
+              <p class="result__text">
+                Enter your height and weight and you´ll see your BMI result here</p>
+            </div>    
         </div>
-
       </form>
-    </section>
-    <script type="module" src="/src/main.js"></script>
+  </section>
+  <section class="BMI_result">
+    <div class="results_container">
+      <img src="/images/image-man-eating.webp" alt="">
+    </div>
+    <div class="card_text">
+      <h2>What your BMI result means</h2>
+      <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+    </div>
+  </section>
+  <script type="module" src="/src/main.js"></script>
   </body>
 </html>
