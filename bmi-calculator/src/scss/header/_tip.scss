@@ -1,5 +1,41 @@
 .tip{
     width: 375px;
-    height: 879px;
-    background-color: red;
+    height: 800px;
+    margin-bottom: 48px;
+
+    .tips_container{
+        width: 87.2%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 40px;
+
+        .tips{
+            width: 100%;
+            height: 221px;
+            display: flex;
+            flex-direction: column;
+            gap:32px;
+
+            .tips_text{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                h3{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 24px;
+                    font-weight:500;
+                    color: black;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    
+
+
 }
