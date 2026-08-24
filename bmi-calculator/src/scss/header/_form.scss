@@ -52,7 +52,32 @@
             }
         }
     }
+    .result{
+        width: 280px;
+        height: 180px;
+        display: flex;
+        gap: 24px;
+        padding: 32px;
+        background-color:#345FF6;
+        border-radius: 10px;
 
+        .result_noactiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            
+            h3{
+                color: #ffffff;
+                font-size: 24px;
+            }
+            p{
+                color: #ffffff;
+            }
+        }
+        
+    }
 
 }
 
