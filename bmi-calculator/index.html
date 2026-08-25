@@ -9,69 +9,67 @@
   <body>
   <section class="header">
       <div class="container">
-          <div class="title_container">
-            <div class="icon_container">
+        <div class="icon_container">
               <img src="/images/logo.svg" alt="">
-            </div>
-            <div class="text_container">
+        </div>  
+        <div class="container_form">
+          <div class="text_container">
               <div class="text_container_title">
-                <div class="container_title">
-                  <h1 class="title">
-                    <span>Body Mass</span>
-                    <span>Index</span><br class="tablet-break"> <span>Calculator</span>
-                  </h1>
-                </div>
-                <div class="description">
-                  <p>Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
-                </div>
+                  <div class="container_title">
+                    <h1 class="title">
+                      <span>Body Mass</span><br class="tablet-break_one"> 
+                      <span>Index </span><br class="tablet-break_two"> <span>Calculator</span>
+                    </h1>
+                  </div>
+                  <div class="description">
+                    <p>Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+                  </div>
               </div>
-            </div>
           </div>
-      </div>
-      <form class="bmi-form">
-        <h2 class="bmi-form__title">
+          <form class="bmi-form">
+            <h2 class="bmi-form__title">
             Enter your details below
-        </h2>
-        <div class="bmi-form__units">
-            <label class="radio">
-                <input type="radio" name="unit" checked>
-                <span>Metric</span>
-            </label>
-            <label class="radio">
-                <input type="radio" name="unit">
-                <span>Imperial</span>
-            </label>
-        </div>
-        <div class="field">
-            <label for="height">
-                Height
-            </label>
+            </h2>
+            <div class="bmi-form__units">
+                <label class="radio">
+                  <input type="radio" name="unit" checked>
+                  <span>Metric</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="unit">
+                  <span>Imperial</span>
+                </label>
+            </div>
+            <div class="field">
             <div class="field_input">
+              <label for="height">
+                Height
+              </label>
                 <input
                     id="height"
                     type="number"
                     placeholder="0">
-                <span>cm</span>
             </div>
-            <label for="weight">
-                Weight
-            </label>
             <div class="field_input">
+              <label for="weight">
+                Weight
+              </label>  
               <input
                     id="weight"
                     type="number"
                     placeholder="0">
-              <span>kg</span>
             </div>
+            </div>
+            <div class="result">
+                <div class="result_noactiv">
+                  <h3>Welcome!</h3>
+                  <p class="result__text">
+                    Enter your height and weight and you´ll see your BMI result here</p>
+                </div>    
+            </div>
+         </form>
         </div>
-        <div class="result">
-            <div class="result_noactiv">
-              <h3>Welcome!</h3>
-              <p class="result__text">
-                Enter your height and weight and you´ll see your BMI result here</p>
-            </div>    
-        </div>
-      </form>
+      </div>
   </section>
   <section class="BMI_result">
     <div class="results_container">
@@ -156,7 +154,6 @@
               <p>Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others.To learn more, it is advised to discuss this with your GP or practice nurse.</p>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <script type="module" src="/src/main.js"></script>
