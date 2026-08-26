@@ -93,15 +93,39 @@
 }
 
 .BMI_result{
-    width: 100%;
-    height: 411px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    gap:40px;
+    width:768px;
+    height: 411.09px;
 
+    .container_result{
+        width: 98%;
+        height: 100%;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .results_container{
+         width: 370px;
+         height: 342px;   
+
+           img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        }
+
+      
+
+        .card_text{
+            width: 331px;
+            height: 342px;
+            gap: 32px;
+        }
+    }
 }
-
+   
 .tip{
     width: 768px;
     height: 503px;
@@ -212,8 +236,166 @@
         }
 
         .bmi-form{
+            width: 564px;
+            height: 476px;
+
+            .field{
+                width: 500px;
+                height: 90px;
+            }
+
+            .result{
+                width: 500px;
+                height: 166px;
+            }
+
+        }
+
+}
+
+.BMI_result{
+    width: 1440px;
+    height: 671px;
+    
+    .container_result{
+        width: 1160px;
+        height: 585px;
+        margin: 0 auto;
+
+
+        .results_container{
+            width: 564px;
+            height: 533px;   
+
+           img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card_text{
+            width: 465px;
+            height: 306px;
+            gap: 32px;
+            justify-content: flex-end;
+            align-items: flex-end;
+    
+        }
+
+    }
+    
+
+
+}
+
+.tip{
+    width: 1440px;
+    height: 422px;
+    padding: 10px 10px;
+
+    .tips_container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 1159px;
+        height: 237px;
+        margin: 0 auto;
+        gap: 32px;
+  
+        .tips{
+            width: 365px;
+            height: 237px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .img{
+                width: 64px;
+                height: 64px;
+                display: flex;
+                align-items: flex-start;
+                justify-content:flex-start;
+            }
+
+            .tips_text{
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+.limitations{
+    width: 1440px;
+    height: 934px;
+
+    .limitations_container{
+        width: 1160px;
+        height: 704px;
+
+        .limitations_title{
+            width: 564px;
+            height: 181px;
+            display: flex;
+            align-items: flex-start;
+            justify-content:flex-start;
+
+            p{
+                text-align: left;
+            }
+        }
+
+        .limitations_description{
+            position: relative;
+            height: 704px;
+
+            .descriptions {
+                position:absolute;
+                width: 365px;
+                min-height: 232px;
+                gap: 16px;
+                padding: 32px;
+                background: #fff;
+                border-radius: 12px;
+
+                p{
+                    font-size: 16px;
+                }
+            }
+            .gender {
+                top: -180px;
+                left:670px;
+            }
+
+            .age {
+                top: 135px;
+                left: 450px;
+            }
+
+            .muscle {
+                top: 135px;
+                right: 0;
+            }
+
+            .pregnancy {
+                top: 340px;
+                left: 300px;
+            }
+
+            .race {
+                top: 338px;
+                right:140px;
+            }
 
         }
 
     }
+
+
+}
+
+
 }
