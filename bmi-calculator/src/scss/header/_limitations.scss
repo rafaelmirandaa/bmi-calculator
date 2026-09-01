@@ -49,6 +49,10 @@
         border-radius: 20px;
         gap: 32px;
 
+        .image{
+            display: none;
+        }
+
         .descriptions_title{
             display: flex;
             flex-direction: rows;

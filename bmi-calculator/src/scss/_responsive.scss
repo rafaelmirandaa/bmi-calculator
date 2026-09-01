@@ -43,6 +43,7 @@
                     font-size: 18px;
                     font-weight: regular;
                 }
+               
             }
          }
 
@@ -170,6 +171,9 @@
         .descriptions:last-child{
             grid-column: 1/3;
             justify-self: center;
+        }
+        .image{
+                display: none;
         }
     }
 
@@ -368,6 +372,11 @@
             .gender {
                 top: -180px;
                 left:670px;
+            }
+            .image{
+                display: block;
+                left:100px;
+                top: 135px;
             }
 
             .age {
