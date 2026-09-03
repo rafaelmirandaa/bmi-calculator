@@ -5,7 +5,8 @@ import heroImg from './assets/hero.png'
 
 const heightInput = document.querySelector("#height");
 const weightInput = document.querySelector("#weight");
-const result = document.querySelector("#result");
+const result_label = document.querySelector(".result__label");
+const bmiValue = document.querySelector("#bmiValue");
 const bmiRange = document.querySelector("#bmiRange");
 
 function calculateBMI() {
@@ -13,18 +14,23 @@ function calculateBMI() {
     const weight = Number(weightInput.value);
     
     if (!heightInput.value || !weightInput.value) {
-        result.textContent = "Welcome!";
+
+        result_label.classList.remove("show");
+        bmiValue.textContent = "Welcome!";
         bmiRange.textContent =
             "Enter your height and weight and you´ll see your BMI result here";
+        
         return;
     }
         const bmi = weight / (height * height);
-        
-        result.textContent = bmi.toFixed(2);
+
+        result_label.classList.add("show");
+        bmiValue.textContent = bmi.toFixed(1);
+    
 
         // Mostrar rango del BMI
-        const minWeight = heightInput * (height * height);
-        const maxWeight = weightInput * (height * height);
+        const minWeight = 18.5 * (height * height);
+        const maxWeight = 24.9 * (height * height);
 
         bmiRange.textContent = 
             `Your BMI suggests you're a healthy weight. Your ideal weight is between: ${minWeight.toFixed(1)} kg - ${maxWeight.toFixed(1)} kg`;
