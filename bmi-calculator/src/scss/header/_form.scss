@@ -30,11 +30,12 @@
         }
     }
 
-    .field {
+    .field_metric{
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 10px;
+        display: none;
 
         .field_input{
             width:100%;
@@ -72,6 +73,65 @@
 
         }
     }
+
+    .field_imperial{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        display: block;
+
+        .field_input{
+            width:100%;
+            display: flex;
+            flex-direction: columns;
+            gap: 8px;
+    
+
+            label{
+                width: 100%;
+            }
+
+            .inputs{
+                width: 100%;
+                height: 77px;
+                display: flex;
+                flex-direction: rows;
+                gap: 16px;
+
+                input{
+                width: 100%;
+                height: 100%;
+                padding: 0 20px;
+                padding: 0 60px 0 20px;
+                border-radius: 12px;
+                box-sizing: border-box; 
+                }
+                input[type="number"]::-webkit-inner-spin-button,
+                input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                }
+
+                /* Firefox */
+                input[type="number"] 
+                {
+                -moz-appearance: textfield;
+                appearance: textfield;
+                }
+
+                input::placeholder {
+                    color:blue;
+                    font-size: 18px;
+                    font-weight: bold;
+                    opacity: 1;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+
     .result{
         width: 280px;
         height: 230px;
