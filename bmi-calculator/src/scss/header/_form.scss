@@ -31,23 +31,24 @@
     }
 
     .field_metric{
-        width: 100%;
+        width: 280px;
+        height: 228px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
         display: none;
 
         .field_input{
             width:100%;
+            height: 106;
             display: flex;
             flex-direction: column;
             gap: 8px;
 
             input{
                 width: 100%;
-                height: 64px;
-                padding: 0 20px;
-                padding: 0 60px 0 20px;
+                height: 77px;
+                padding: 24px 24px;
                 border-radius: 12px;
                 box-sizing: border-box; 
             }
