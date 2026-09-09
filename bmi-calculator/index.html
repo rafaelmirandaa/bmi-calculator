@@ -32,11 +32,11 @@
             </h2>
             <div class="bmi-form__units">
                 <label class="radio">
-                  <input type="radio" name="unit" checked>
+                  <input type="radio" name="unit" id="metric" checked>
                   <span>Metric</span>
                 </label>
                 <label class="radio">
-                  <input type="radio" name="unit">
+                  <input type="radio" name="unit" id="imperial" >
                   <span>Imperial</span>
                 </label>
             </div>
@@ -45,19 +45,23 @@
                   <label for="height">
                     Height
                   </label>
-                    <input
+                  <div class="inputs">
+                     <input
                         id="height"
                         type="number"
                         placeholder="cm">
+                  </div>
                 </div>
                 <div class="field_input">
                   <label for="weight">
                     Weight
                   </label>  
-                  <input
+                  <div class="input">
+                    <input
                         id="weight"
                         type="number"
                         placeholder="kg">
+                  </div>
                 </div>
             </div>
             <div class="field_imperial">
@@ -83,7 +87,7 @@
                     </label> 
                   <div class="inputs">
                     <input
-                        id="weight"
+                        id="stone"
                         type="number"
                         placeholder="st">
                     <input
