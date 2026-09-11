@@ -19,6 +19,8 @@ const imperialRadio = document.querySelector("#imperial");
 const metricFields = document.querySelector(".field_metric");
 const imperialFields = document.querySelector(".field_imperial");
 
+const resultcard = document.querySelector("#resultcard");
+
 metricRadio.addEventListener("change", () => {
     metricFields.style.display = "flex";
     imperialFields.style.display = "none";
@@ -91,6 +93,7 @@ function calculateBMIImperial() {
     // Fórmula BMI Imperial
     const bmi = (totalPounds * 703) / (totalInches * totalInches);
 
+    resultcard.classList.add("active");
     result_label.classList.add("show");
 
     bmiValue.textContent = bmi.toFixed(1);
