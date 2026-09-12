@@ -56,9 +56,8 @@ function calculateBMI() {
         const minWeight = 18.5 * (height * height);
         const maxWeight = 24.9 * (height * height);
 
-        bmiRange.textContent = 
-            `Your BMI suggests you're a healthy weight. Your ideal weight is between: ${minWeight.toFixed(1)} kg - ${maxWeight.toFixed(1)} kg`;
-    
+        bmiRange.innerHTML = 
+            `Your BMI suggests you're a healthy weight. Your ideal <br> weight is between: ${minWeight.toFixed(1)} kg - <br> ${maxWeight.toFixed(1)} kg`;
 }
 
 function calculateBMIImperial() {
