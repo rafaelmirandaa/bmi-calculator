@@ -35,7 +35,7 @@
         height: 228px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 16px;
         display: block;
 
         .field_input{
@@ -84,20 +84,14 @@
         display: none;
 
         .field_input{
-            width:100%;
-            height: 228px;
+            width:280px;
+            height:106px;
             display: flex;
             flex-direction: column;
-            gap: 32px;
-    
-
-            label{
-                width: 44px;
-                height: 21px;
-            }
+            gap: 5px;
 
             .inputs{
-                width: 100%;
+                width: 280px;
                 height: 77px;
                 display: flex;
                 flex-direction: row;
@@ -106,7 +100,6 @@
                 input{
                 width: 132px;
                 height: 77px;
-                gap: 24px;
                 padding: 24px 24px;
                 /*padding: 0 20px;
                 padding: 0 60px 0 20px;*/
@@ -144,15 +137,28 @@
         height: 257px;
         display: flex;
         gap: 24px;
-        padding: 32px;
+        padding: 32px 32px;
         background-color:#345FF6;
         border-radius: 10px;
         flex-direction: column;
         color: #ffffff;
 
+        .result__bmi{
+            width: 216px;
+            height: 85px;
+            
+        }
+
         .result__label {
             font-size: 15px;
             display: none;
+            margin-top:0px;
+        }
+
+        .result__description {
+            width: 216px;
+            height: 63px;
+            display: block;
             margin-top:0px;
         }
 
