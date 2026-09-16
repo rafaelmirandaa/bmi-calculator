@@ -338,7 +338,32 @@
             .result{
                 width: 500px;
                 height: 166px;
+                gap:24px;
+                padding: 32px;
                 margin-bottom: 120px;
+
+                &.bmi_result{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 32px;
+                }
+
+                &.bmi_result.calculated {
+                    display: flex;
+                    flex-direction:row;
+                    gap: 32px;
+                }
+
+                .result__bmi{
+                    width: 210px;
+                    height: 29px;
+                }
+
+                .result__description{
+                    width: 506px;
+                    height: 84px;
+                }
             }
         }
     }

@@ -72,7 +72,7 @@ function calculateBMIImperial() {
         !poundsInput.value
     ) {
         result_label.classList.remove("show");
-
+        resultcard.classList.remove("calculated");
         bmiValue.textContent = "Welcome!";
 
         bmiRange.textContent =
@@ -90,9 +90,8 @@ function calculateBMIImperial() {
     // Fórmula BMI Imperial
     const bmi = (totalPounds * 703) / (totalInches * totalInches);
 
-    resultcard.classList.add("active");
     result_label.classList.add("show");
-
+    resultcard.classList.add("calculated");
     bmiValue.textContent = bmi.toFixed(1);
 
     // Peso saludable en libras
