@@ -115,17 +115,32 @@
 
     .result{
         width: 622px;
+        padding: 32px;
         height: 130px;
         margin-top:20px;
         border-radius: 0px 70px 70px 0px;
+
+        &.bmi_result{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        &.bmi_result.calculated {
+            display: flex;
+            flex-direction:row;
+            gap: 32px;
+        }
 
         .result__bmi{
             width: 558px;
             height: 29px;
         }
+
         .result__description{
             width: 558px;
-            height: 21px;
+            height: 61px;
         }
 
     }

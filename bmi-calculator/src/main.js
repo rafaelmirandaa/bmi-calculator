@@ -12,14 +12,12 @@ const footInput = document.querySelector("#foot");
 const inchInput = document.querySelector("#inch");
 const stoneInput = document.querySelector("#stone");
 const poundsInput = document.querySelector("#libras");
-
 const metricRadio = document.querySelector("#metric");
 const imperialRadio = document.querySelector("#imperial");
-
 const metricFields = document.querySelector(".field_metric");
 const imperialFields = document.querySelector(".field_imperial");
-
 const resultcard = document.querySelector("#resultcard");
+
 
 metricRadio.addEventListener("change", () => {
     metricFields.style.display = "flex";
@@ -31,8 +29,6 @@ imperialRadio.addEventListener("change", () => {
     imperialFields.style.display = "flex";
 });
 
-
-
 function calculateBMI() {
     const height = Number(heightInput.value) / 100;
     const weight = Number(weightInput.value);
@@ -40,6 +36,7 @@ function calculateBMI() {
     if (!heightInput.value || !weightInput.value) {
 
         result_label.classList.remove("show");
+        resultcard.classList.remove("calculated");
         bmiValue.textContent = "Welcome!";
         bmiRange.textContent =
             "Enter your height and weight and you´ll see your BMI result here";
@@ -49,15 +46,16 @@ function calculateBMI() {
         const bmi = weight / (height * height);
 
         result_label.classList.add("show");
+        resultcard.classList.add("calculated");
         bmiValue.textContent = bmi.toFixed(1);
-    
+
 
         // Mostrar rango del BMI
         const minWeight = 18.5 * (height * height);
         const maxWeight = 24.9 * (height * height);
 
         bmiRange.innerHTML = 
-            `Your BMI suggests you're a healthy weight. Your ideal <br> weight is between: ${minWeight.toFixed(1)} kg - <br> ${maxWeight.toFixed(1)} kg`;
+            `Your BMI suggests you're a healthy weight. Your ideal weight is between: ${minWeight.toFixed(1)} kg - ${maxWeight.toFixed(1)} kg`;
 }
 
 function calculateBMIImperial() {

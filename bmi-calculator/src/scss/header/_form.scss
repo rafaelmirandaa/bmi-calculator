@@ -130,8 +130,6 @@
             }
         }
     }
-
-
    .result{  
         width: 280px;
         height: 257px;
@@ -163,7 +161,8 @@
         }
 
         .result__label.show {
-            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         #bmiValue {
@@ -172,7 +171,6 @@
             font-weight: bold;
             margin-top: 10px;
         }
-
       
         .result.active  {
             display: grid;
